@@ -58,12 +58,18 @@ function App() {
       </div>
       <button
         className="btn btn-neutral w-96 cursor-pointer"
-        onClick={() => setIsShow(!isShow)}
+        onClick={() => setIsShow(true)}
       >
-        Check Out
+        {isShow ? "Edit Selection" : "Checkout"}
       </button>
       {isShow && (
         <div className="my-4">
+          {/* <button
+            className="btn btn-neutral w-96 cursor-pointer"
+            onClick={() => setIsShow(false)}
+          >
+            Click to Edit Selection
+          </button> */}
           <div>
             {toppingsSelected.map((topping) => (
               <ShowTopping key={topping.name} allTop={topping} />
