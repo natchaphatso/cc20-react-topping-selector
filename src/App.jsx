@@ -63,7 +63,7 @@ function App() {
         {isShow ? "Edit Selection" : "Checkout"}
       </button>
       {isShow && (
-        <div className="my-4">
+        <div className="my-4 border-2 border-neutral rounded-2xl p-4 ">
           {/* <button
             className="btn btn-neutral w-96 cursor-pointer"
             onClick={() => setIsShow(false)}
